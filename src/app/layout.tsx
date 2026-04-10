@@ -7,6 +7,7 @@ import {
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import LightRays from "@/components/ui/LightRays";
+import { NavBar } from "@/components/ui";
 
 const figtree = Figtree({
     subsets: ["latin"],
@@ -47,7 +48,7 @@ export default function RootLayout({
                 figtree.variable,
             )}
         >
-            <body className="dark min-h-full flex flex-col">
+            <body className="dark "> {/* min-h-full flex flex-col */}
                 <div
                     className="absolute inset-0 top-0 z-[-1] min-h-screen overflow-hidden"
                 >
@@ -64,7 +65,9 @@ export default function RootLayout({
                         className="custom-rays"
                     />
                 </div>
+                <NavBar />
                 <main>
+
                   {children}
                 </main>
             </body>
