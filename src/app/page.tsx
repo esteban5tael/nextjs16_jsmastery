@@ -1,3 +1,4 @@
+import LightRays from "@/components/ui/LightRays";
 import {
     generateAsyncTitle,
     generateAsyncDescription,
@@ -14,9 +15,16 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Page() {
     return (
         <>
-            <main>
-                <h1></h1>
-            </main>
+            <section>
+                <h1 className="text-center">
+                    The Hub for Every Dev <br />
+                    Event You Can't Miss
+                </h1>
+                <p className="text-center mt-5">
+                    Hackathons, Meetups and Conferences. Discover,
+                    Share, and Connect with Dev Events Worldwide.
+                </p>
+            </section>
         </>
     );
 }
