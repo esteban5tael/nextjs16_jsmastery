@@ -1,8 +1,8 @@
 //  import { generateAsyncTitle,generateAsyncDescription } from "@/lib/seo";
 
-export const APP_NAME = "Todo's App";
+export const APP_NAME = "DevEvents";
 export const APP_DESCRIPTION =
-    "Una aplicación de gestión de tareas (todos) construida con Next.js, Supabase y Prisma ORM. Permite crear, editar, eliminar y marcar tareas como completadas. Ideal para organizar tu día a día de manera eficiente.";
+    "The Hub for Every Dev Event You Can't Miss! Discover, Share, and Connect with Dev Events Worldwide.";
 
 const generateTitle = (title?: string) => {
     return title ? `${title} | ${APP_NAME}` : APP_NAME;
